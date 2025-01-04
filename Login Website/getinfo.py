@@ -10,7 +10,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/hello', methods=['POST'])
+@app.route('/SimpleLoginPage/Login Website/hello', methods=['POST'])
 def hello():
     username = request.form['username']
     password = request.form['password'] 
@@ -30,7 +30,7 @@ def hello():
     conn.close()
     return render_template('index.html')
 
-@app.route('/goodbye', methods=['POST'])
+@app.route('/SimpleLoginPage/Login Website/goodbye', methods=['POST'])
 def goodbye():
     username = request.form['username']
     password = request.form['password'] 
